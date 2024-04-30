@@ -2103,11 +2103,11 @@ letter-spacing: -0.02em;
                }
          }
         
-         @media screen and (max-width: 415px){
+         @media screen and (max-width: 420px){
         
             .sm-width h3{
                 text-align: start;
-                font-size: 18px;
+                font-size: 16px;
      
                
          font-weight: 600;
@@ -2117,7 +2117,7 @@ letter-spacing: -0.02em;
      
             .lg-font{
              font-family: POE Redcoat New;
-             font-size: 18px!important;
+             font-size: 16px!important;
                  font-weight: 600;
                  line-height: 56.44px;
                  letter-spacing: 0.005em;
@@ -2125,7 +2125,7 @@ letter-spacing: -0.02em;
             .w-30 h3{
                 text-align: start;
                 font-family: POE Redcoat New;
-                font-size: 18px!important;
+                font-size: 16px!important;
                 
          font-weight: 600;
          line-height: 56.44px;
@@ -2154,7 +2154,7 @@ letter-spacing: -0.02em;
             font-size: 1px!important; */
             text-align: start;
             font-family: POE Redcoat New;
-            font-size: 18px;
+            font-size: 14px;
           
     font-weight: 600;
     line-height: 56.44px;
@@ -2162,25 +2162,70 @@ letter-spacing: -0.02em;
         }
         .lg-font{
             font-family: POE Redcoat New;
-            font-size: 18px!important;
+            font-size: 14px!important;
                 font-weight: 600;
                 line-height: 56.44px;
                 letter-spacing: 0.005em;
         }
         .w-30 h3{
             text-align: center;
-            font-size: 18px!important;
+            font-size: 14px!important;
             font-family: POE Redcoat New;
           
     font-weight: 600;
     line-height: 56.44px;
     letter-spacing: 0.005em;
         }
+
        .co-text{
         text-align: center!important;
        }
         
        }
+       @media screen and (max-width: 378px){
+        .st-small{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+           padding: 0!important;
+        }
+        /* .sm-width{
+            width: 13%;
+        } */
+        .sm-width img{
+          width: 100%;
+        }
+        .sm-width h3{
+            /* text-align: center;
+            font-size: 1px!important; */
+            text-align: start;
+            font-family: POE Redcoat New;
+            font-size: 13px;
+          
+    font-weight: 600;
+    line-height: 56.44px;
+    letter-spacing: 0.005em;
+        }
+        .lg-font{
+            font-family: POE Redcoat New;
+            font-size: 13px!important;
+                font-weight: 600;
+                line-height: 56.44px;
+                letter-spacing: 0.005em;
+        }
+        .w-30 h3{
+            text-align: center;
+            font-size: 13px!important;
+            font-family: POE Redcoat New;
+          
+    font-weight: 600;
+    line-height: 56.44px;
+    letter-spacing: 0.005em;
+        }
+        .co-text{
+            text-align: center!important;
+           }
+        }
       
 
        /* footer */
