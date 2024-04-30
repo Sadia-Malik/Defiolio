@@ -1,20 +1,69 @@
-window.onload = function() {
-    // Get all the navigation menu items
-    var menuItems = document.querySelectorAll('.nav-menu li a');
+// window.onload = function() {
+//     // Get all the navigation menu items
+//     var menuItems = document.querySelectorAll('.nav-menu li a');
     
-    // Add event listener to each menu item
-    menuItems.forEach(function(item) {
-        item.addEventListener('click', function() {
-            // Remove active class from all menu items
-            menuItems.forEach(function(item) {
-                item.classList.remove('active');
-            });
+//     // Add event listener to each menu item
+//     menuItems.forEach(function(item) {
+//         item.addEventListener('click', function() {
+//             // Remove active class from all menu items
+//             menuItems.forEach(function(item) {
+//                 item.classList.remove('active');
+//             });
 
-            // Add active class to the clicked menu item
-            this.classList.add('active');
+//             // Add active class to the clicked menu item
+//             this.classList.add('active');
+//         });
+//     });
+//     var menuItems = document.querySelectorAll('.nav-tabs1 li ');
+    
+//     // Add event listener to each menu item
+//     menuItems.forEach(function(item) {
+//         item.addEventListener('click', function() {
+//             // Remove active class from all menu items
+//             menuItems.forEach(function(item) {
+//                 item.classList.remove('active1');
+//             });
+
+//             // Add active class to the clicked menu item
+//             this.classList.add('active1');
+//         });
+//     });
+// };
+
+// 2nd
+
+window.onload = function() {
+    // Function to handle click events on menu items
+    function handleMenuClicks() {
+        var menuItems = document.querySelectorAll('.nav-menu li a');
+        menuItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                menuItems.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
         });
-    });
+    }
+    
+    // Function to handle click events on tab items
+    function handleTabClicks() {
+        var tabItems = document.querySelectorAll('.nav-tabs1 li');
+        tabItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                tabItems.forEach(function(item) {
+                    item.classList.remove('active1');
+                });
+                this.classList.add('active1');
+            });
+        });
+    }
+    
+    // Call the functions to set up event listeners
+    handleMenuClicks();
+    handleTabClicks();
 };
+
 // Menu open by icon
 function toggleMenu() {
     var menu = document.querySelector('.nav-menu ul');
@@ -60,3 +109,21 @@ var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
 
 
+
+// window.onload = function() {
+//     // Get all the navigation menu items
+//     var menuItems = document.querySelectorAll('.nav-tabs1 li ');
+    
+//     // Add event listener to each menu item
+//     menuItems.forEach(function(item) {
+//         item.addEventListener('click', function() {
+//             // Remove active class from all menu items
+//             menuItems.forEach(function(item) {
+//                 item.classList.remove('active1');
+//             });
+
+//             // Add active class to the clicked menu item
+//             this.classList.add('active1');
+//         });
+//     });
+// };
